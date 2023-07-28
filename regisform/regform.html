@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>regform-siswa</title>
+</head>
+
+<body>
+    <form action="contact.php" method="post">
+        <fieldset>
+            <legend>regform siswa</legend>
+            <p>
+                <label>nama:</label>
+                <input type="text" name="nama" placeholder="nama lengkap..." />
+            </p>
+            <p>
+                tanggal lahir:<br>
+                <input type="date" name="tgl_lahir" required><br>
+            </p>
+
+            <label for="tinggi">Tinggi Badan :</label>
+        <input type="number" name="badan" id="tinggi" value="150" min="150" max="200"> cm <br><br>
+        <label for="berat">Berat Badan :</label>
+        <input type="number" name="badan" id="berat" value="50" min="50" max="150"> kg <br><br>
+        
+
+
+            <label>Agama</label>
+            <select name="agama">
+                <option value="islam">islam</option>
+                <option value="kristen">kristen</option>
+
+
+
+                <option value="hindu">hindu</option>
+                <option value="budha">budha</option>
+                <option value="khonguchu">khonguchu</option>
+            </select>
+
+            <p>
+                <label>gender</label>
+                <label><input type="radio" name="gender" value="female" /> female</label>
+                <label><input type="radio" name="gender" value="male" /> male</label>
+            </p>
+            <p>
+                <label>alamat</label>
+                <textarea name="keterangan"></textarea>
+
+            </p>
+            <p>
+                <i>setuju</i>
+                <input type="checkbox" name="checkbox" value="setuju" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
